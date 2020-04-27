@@ -1,0 +1,7 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+    <p>The Article you have searched is....</p>
+    {{ obj.id }} - {{ obj.name }} / {{ obj.author }} / {{ obj.date }}
+
+{% endblock %}

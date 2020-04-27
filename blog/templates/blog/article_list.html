@@ -1,0 +1,9 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+    {{ article_list }}
+    {% for article in article_list %}
+        <p>{{ article.id }} - {{ article.name }} / {{ article.description }} / {{ article.date }}</p>
+    {% endfor %}
+
+{% endblock %}
